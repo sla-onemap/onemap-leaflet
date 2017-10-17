@@ -8,8 +8,12 @@ We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 
 https://discuss.onemap.sg
 
-Current Function (Shown in example.html):
+Current Function (Shown in example folder):
 <br />
 -Map Initialization<br />
 -Add Map Layers (XYZ) -Front/End<br />
 -Remove Layers <br />
+-Search <br />
+-Reverse Geocoding <br />
+-Coord Conversion <br />
+-Themes API (Get Query Names & Retrieve Theme) <br />

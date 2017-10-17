@@ -2,7 +2,9 @@
 
 This is an open-source project built on top of leaflet for OneMap 2.0. 
 
-In order to make OneMap more 2.0 interactive and data-driven, we will be strengthening this project's codebase.
+This means you are able to freely invoke leaflet & related-projects' functions on the initialized "map" object.
+
+In order to make OneMap more 2.0 interactive and data-driven, we will be strengthening OneMap-Leaflet JS codebase.
 
 We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 

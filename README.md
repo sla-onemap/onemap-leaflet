@@ -1,6 +1,6 @@
 # Project OneMap-Leaflet JS (Alpha)
 
-This is an open-source project built on top of leaflet for OneMap 2.0. 
+This is an open-source project built on top of leaflet and togeojson for OneMap 2.0. 
 
 This means you are able to freely invoke leaflet & related-projects' functions on the initialized "map" object.
 
@@ -21,7 +21,7 @@ https://discuss.onemap.sg
 -Themes API (Get Query Names & Retrieve Theme) <br />
 -Point Themes to GeoJSON conversion <br />
 <br />
-## Utilities (Shown in 'examples' folder):
+### Utilities (Shown in 'examples' folder):
 <br />
 -Movement Feeding (Start, Moving ,and End)<br />
 -KML String to GeoJSON Conversion <br />

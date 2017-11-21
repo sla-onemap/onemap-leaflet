@@ -31,7 +31,7 @@
 	    <td>Config</td>
 	    <td>onemap.config("access token");<br><br>Put your access token inside the function. </td>
 	    <td>After access token is configured, the rest of the services will display.
-	    	<script>onemap.config("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjgsInVzZXJfaWQiOjgsImVtYWlsIjoiY2xvc2Vkc3VwZXJhcGl1c2VyQHNsYS5nb3Yuc2ciLCJmb3JldmVyIjpmYWxzZSwiaXNzIjoiaHR0cDpcL1wvb20yLmRmZS5vbmVtYXAuc2dcL2FwaVwvdjJcL3VzZXJcL3Nlc3Npb24iLCJpYXQiOjE1MDgyMjcyNDcsImV4cCI6MTUwODY1OTI0NywibmJmIjoxNTA4MjI3MjQ3LCJqdGkiOiIxZDhkMTMwYzBjOTdmYWUyMzE2ZDNkYWQyZDQwZjMyNCJ9.PadZKW45koTd36ZpelOqxQ8hGxZP_HiKjgmWsI1h6EY");</script>
+	    	<script>onemap.config("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMzNywidXNlcl9pZCI6MzM3LCJlbWFpbCI6ImthaWthaWNvbmdAZ21haWwuY29tIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNTExMjQ2NzQzLCJleHAiOjE1MTE2Nzg3NDMsIm5iZiI6MTUxMTI0Njc0MywianRpIjoiZDg2OWFmZTYzNDRiM2JhYmY2MWEyN2VhMWQwMjg3YjgifQ.LcHgH06vJS46wsRuGVdSldC47y05bECuto3VI1kgGQo");</script>
 	    </td>
 	  </tr>
 
@@ -63,6 +63,20 @@
 	    <td>Retrieve Theme Data</td>
 	    <td>onemap.retrieveTheme("paheadquarters");<br><br>Use Query Name retrieved from OneMap API</td>
 	    <td><script>document.write(onemap.retrieveTheme("paheadquarters"));</script></td>
+	  </tr>
+
+	  <tr>
+	    <td>Converts Theme(Points) Object to GeoJSON <br>(Only Name & Desc)</td>
+	    <td>onemap.retrieveTheme("paheadquarters");<br>
+	    	var geojson = onemap.pointTheme2GeoJSON(themeObj);<br><br>Convert using Theme Object</td>
+	    <td>
+	    	<script>
+	    		var themeObj = onemap.retrieveTheme("paheadquarters");
+	    		//Retrieve GeoJSON for overlaying
+	    		var geojson = onemap.pointTheme2GeoJSON(themeObj);
+	    		document.write("<b>GeoJSON has been stringify:</b><br><br>"+JSON.stringify(geojson));
+			</script>
+		</td>
 	  </tr>
 	 
 	</table>

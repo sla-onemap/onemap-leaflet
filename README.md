@@ -11,7 +11,6 @@ We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 https://discuss.onemap.sg
 
 ## Current Capabilities (Shown in 'examples' folder):
-<br />
 -Map Initialization<br />
 -Add Map Layers (XYZ) -Front/End<br />
 -Remove Layers <br />
@@ -19,9 +18,9 @@ https://discuss.onemap.sg
 -Reverse Geocoding <br />
 -Coord Conversion <br />
 -Themes API (Get Query Names & Retrieve Theme) <br />
--Point Themes to GeoJSON conversion <br />
-<br />
-### Utilities (Shown in 'examples' folder):
+-Point Themes to GeoJSON conversion 
+
+## Utilities (Shown in 'examples' folder):
 <br />
 -Movement Feeding (Start, Moving ,and End)<br />
 -KML String to GeoJSON Conversion <br />

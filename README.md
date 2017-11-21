@@ -10,7 +10,7 @@ We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 
 https://discuss.onemap.sg
 
-## Current Capabilities (Shown in 'examples' folder):
+## OneMap-Leaflet's Current Capabilities:
 -Map Initialization<br />
 -Add Map Layers (XYZ) -Front/End<br />
 -Remove Layers <br />
@@ -20,7 +20,7 @@ https://discuss.onemap.sg
 -Themes API (Get Query Names & Retrieve Theme) <br />
 -Point Themes to GeoJSON conversion 
 
-## Utilities (Shown in 'examples' folder):
+## OneMap-Leaflet's Utilities:
 <br />
 -Movement Feeding (Start, Moving ,and End)<br />
 -KML String to GeoJSON Conversion <br />

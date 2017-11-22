@@ -12,15 +12,16 @@ Using this common library, you are empowered to evoke OneMap, Leaflet and togeoj
 <b>API Documentation</b> : https://docs.onemap.sg
 
 ## OneMap-Leaflet's Current Capabilities (Examples Included)
--Map Initialization<br />
+-Map Initialization (Four Map Styles)<br />
 -Map Initialization With OpenStreetMap<br />
 -Map Initialization With Google Map -> Please include Google-Mutant & Google API script!<br />
--Add Map Layers (XYZ) -Front/End<br />
+-Add Map Layers at the Front(XYZ) <br />
+-Add Map Layers at the Back(XYZ) <br />
 -Remove Layers <br />
--Search <br />
--Reverse Geocoding <br />
--Coord Conversion <br />
--Themes API (Get Query Names & Retrieve Theme) <br />
+-New OneMap Search Function<br />
+-New OneMap Reverse Geocoding <br />
+-New OneMap Coord Conversion <br />
+-New OneMap Themes API (Get Query Names & Retrieve Theme) <br />
 -POI-Type Themes to GeoJSON conversion <br />
 -Find Nearby Amenities for POI-Type Themes (Distance Buffer) -> Please include Turf.js script!
 

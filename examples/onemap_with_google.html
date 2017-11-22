@@ -1,0 +1,23 @@
+			<html>
+				<head>
+					<title>OneMap2 XYZ (Default)</title>
+					<!--Please add in google javascript api-->
+					<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"  async defer></script>
+					<link rel="stylesheet" href="../onemap-leaflet.css" />
+					<script src="../onemap-leaflet.js"></script>
+					<!--Please add in Google Mutant-->
+					<script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
+				</head>
+				<body>
+					<h1>Singapore Map with Google Map</h1>
+						<!--Creates a Div for Map-->
+						<div id='map' style='height:800px;'></div>
+				</body>
+				<script>
+					//Initialize OneMap With Google Map
+					//The parameters are Div name,Map style(default,night grey,original),Zoom, Latitude, Longitude, Opacity , and Google Map Type (roadmap,satellite,terrain and hybrid) 
+					var map = onemap.initializeMapWithGoogleMap('map',"default",11,1.3,103.8,0.8,"roadmap");
+
+				</script>
+
+			</html>

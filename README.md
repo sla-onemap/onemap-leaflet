@@ -1,4 +1,4 @@
-# OneMap-Leaflet JS (Alpha Ver. 0.0.6)
+# OneMap-Leaflet JS (Alpha Ver. 0.1.8)
 
 This is an open-source project built on top of leaflet and togeojson for OneMap 2.0. 
 
@@ -8,20 +8,24 @@ In order to make OneMap more 2.0 interactive and data-driven, we will be strengt
 
 We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 
-https://discuss.onemap.sg
+Discussion Forum : https://discuss.onemap.sg/t/project-onemap-leaflet-js-alpha-open-source/67
+API Documentation : https://docs.onemap.sg
 
-## OneMap-Leaflet's Current Capabilities:
+## OneMap-Leaflet's Current Capabilities (Examples Included):
 -Map Initialization<br />
+-Map Initialization With OpenStreetMap<br />
+-Map Initialization With Google Map -> Please include Google-Mutant & Google API script!<br />
 -Add Map Layers (XYZ) -Front/End<br />
 -Remove Layers <br />
 -Search <br />
 -Reverse Geocoding <br />
 -Coord Conversion <br />
 -Themes API (Get Query Names & Retrieve Theme) <br />
--Point Themes to GeoJSON conversion 
+-Point Themes to GeoJSON conversion <br />
+-Find Nearby Themes (Distance Buffer) -> Please include Turf.js script!
 
 ## OneMap-Leaflet's Utilities:
--Movement Feeding (Start, Moving ,and End)<br />
+-Movement Recording (Start, Moving ,and End)<br />
 -KML String to GeoJSON Conversion <br />
 
 

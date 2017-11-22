@@ -1,0 +1,19 @@
+			<html>
+				<head>
+					<title>OneMap2 XYZ (Default)</title>
+					<link rel="stylesheet" href="../onemap-leaflet.css" />
+					<script src="../onemap-leaflet.js"></script>
+				</head>
+				<body>
+					<h1>Singapore Map with OSM</h1>
+						<!--Creates a Div for Map-->
+						<div id='map' style='height:800px;'></div>
+				</body>
+				<script>
+					//Initialize OneMap With OSM
+					//The parameters are Div name,Map style(default,night grey,original),Zoom, Latitude, Longitude and Opacity
+					var map = onemap.initializeMapWithOSM('map',"default",11,1.3,103.8,0.8);
+
+				</script>
+
+			</html>

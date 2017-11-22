@@ -1,6 +1,8 @@
 <head>
 	<title>REST Examples</title>
 	<script src="../onemap-leaflet.js"></script>
+	<!--Please add in Turf.js script-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.0.4/turf.min.js"></script>
 	<style>
 		table {
 		    font-family: arial, sans-serif;
@@ -66,15 +68,29 @@
 	  </tr>
 
 	  <tr>
-	    <td>Converts Theme(Points) Object to GeoJSON <br>(Only Name & Desc)</td>
+	    <td>Converts All Theme(Points) Objects in GeoJSON Format<br>(Only Name & Desc)</td>
 	    <td>onemap.retrieveTheme("paheadquarters");<br>
-	    	var geojson = onemap.pointTheme2GeoJSON(themeObj);<br><br>Convert using Theme Object</td>
+	    	var geojson = onemap.pointTheme2GeoJSON(themeObj);<br><br>Converts using Theme Object</td>
 	    <td>
 	    	<script>
 	    		var themeObj = onemap.retrieveTheme("paheadquarters");
 	    		//Retrieve GeoJSON for overlaying
 	    		var geojson = onemap.pointTheme2GeoJSON(themeObj);
 	    		document.write("<b>GeoJSON has been stringify:</b><br><br>"+JSON.stringify(geojson));
+			</script>
+		</td>
+	  </tr>
+
+	  <tr>
+	    <td>Gets Nearby Theme(Points) Objects in GeoJSON Format<br>(Only Name & Desc)</td>
+	    <td>onemap.retrieveTheme("childcare");<br>
+	    	var nearby = onemap.nearbyPointFeatures(themeObj,1.3,103.8,200);<br><br>Find Nearby using Theme Object,Latitude,Longitude and distance(meters)</td>
+	    <td>
+	    	<script>
+	    		var themeObj = onemap.retrieveTheme("childcare");
+	    		//Retrieve GeoJSON for overlaying
+	    		var nearby = onemap.nearbyPointFeatures(themeObj,1.3,103.8,200);
+	    		document.write("<b>GeoJSON has been stringify:</b><br><br>"+JSON.stringify(nearby));
 			</script>
 		</td>
 	  </tr>

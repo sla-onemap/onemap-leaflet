@@ -5,7 +5,7 @@
 					<script src="../onemap-leaflet.js"></script>
 				</head>
 				<body>
-					<h1>Singapore Map</h1>
+					<h1>Map Example</h1>
 						<!--Creates a Div for Map-->
 						<div id='map' style='height:800px;'></div>
 				</body>
@@ -43,19 +43,23 @@
 					//Removed Layer from Map
 					onemap.removeLayer(map,removeLayer);
 
-					//Setup configuration for REST API Services
+					//Setup configuration for REST API Services (Your Access Token)
+					//Our Documentation @  https://docs.onemap.sg
 					onemap.config("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMzNywidXNlcl9pZCI6MzM3LCJlbWFpbCI6ImthaWthaWNvbmdAZ21haWwuY29tIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNTExMjQ2NzQzLCJleHAiOjE1MTE2Nzg3NDMsIm5iZiI6MTUxMTI0Njc0MywianRpIjoiZDg2OWFmZTYzNDRiM2JhYmY2MWEyN2VhMWQwMjg3YjgifQ.LcHgH06vJS46wsRuGVdSldC47y05bECuto3VI1kgGQo");
 
 					//Call Theme Services
-					var themeObj = onemap.retrieveTheme("kindergartens");
+					var themeObj = onemap.retrieveTheme("childcare");
 
 	    			//Convert Themes that are Points into GeoJSON for overlaying
 	    			var data = onemap.pointTheme2GeoJSON(themeObj);
 
 	    			//Add GeoJSON to map
-	    			var geojson = L.geoJSON(data, {});
+		    		var geojson = L.geoJSON(data, {onEachFeature: function (feature, layer) {layer.bindPopup('<h1>'+feature.properties.NAME+'</h1><p>Description: '+feature.properties.DESCRIPTION+'</p>');}});
 					
 					geojson.addTo(map);
+
+					//Fit bound to markers
+					map.fitBounds(geojson.getBounds());
 
 				</script>
 

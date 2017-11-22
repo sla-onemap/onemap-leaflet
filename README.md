@@ -1,6 +1,6 @@
 # OneMap-Leaflet JS (Alpha Ver. 0.1.8)
 
-In order to make New OneMap interactive and data-driven, OneMap-Leaflet JS is born. We invite you to give suggestions on evolving Project OneMap-Leaflet JS.
+In order to make New OneMap interactive and data-driven, OneMap-Leaflet JS is born. We invite you to give suggestions to evolve Project OneMap-Leaflet JS.
 
 ## Project Description
 

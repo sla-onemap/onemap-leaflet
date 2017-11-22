@@ -4,9 +4,9 @@ In order to make New OneMap interactive and data-driven, OneMap-Leaflet JS is bo
 
 ## Project Description
 
-This is an open-source project built on top of leaflet and togeojson for OneMap 2.0. 
+This open-source project is being built on top of leaflet and togeojson for Singapore's Geospatial Community. 
 
-This means you are able to freely invoke leaflet & related-projects' functions on the initialized "map" object.
+Using this common library, you are empowered to evoke OneMap, Leaflet and togeojson functions on the initialized "map" object.
 
 <b>Discussion Forum</b> : https://discuss.onemap.sg/t/project-onemap-leaflet-js-alpha-open-source/67<br/>
 <b>API Documentation</b> : https://docs.onemap.sg

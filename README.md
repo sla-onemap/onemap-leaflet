@@ -8,8 +8,8 @@ In order to make OneMap more 2.0 interactive and data-driven, we will be strengt
 
 We invite you to give suggestions on how to evolve Project OneMap-Leaflet JS.
 
-Discussion Forum : https://discuss.onemap.sg/t/project-onemap-leaflet-js-alpha-open-source/67
-API Documentation : https://docs.onemap.sg
+<b>Discussion Forum</b> : https://discuss.onemap.sg/t/project-onemap-leaflet-js-alpha-open-source/67<br/>
+<b>API Documentation</b> : https://docs.onemap.sg
 
 ## OneMap-Leaflet's Current Capabilities (Examples Included):
 -Map Initialization<br />

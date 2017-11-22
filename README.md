@@ -21,8 +21,8 @@ API Documentation : https://docs.onemap.sg
 -Reverse Geocoding <br />
 -Coord Conversion <br />
 -Themes API (Get Query Names & Retrieve Theme) <br />
--Point Themes to GeoJSON conversion <br />
--Find Nearby Themes (Distance Buffer) -> Please include Turf.js script!
+-POI-Type Themes to GeoJSON conversion <br />
+-Find Nearby Amenities for POI-Type Themes (Distance Buffer) -> Please include Turf.js script!
 
 ## OneMap-Leaflet's Utilities:
 -Movement Recording (Start, Moving ,and End)<br />

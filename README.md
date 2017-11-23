@@ -23,10 +23,16 @@ Using this common library, you are empowered to evoke OneMap, Leaflet and togeoj
 -New OneMap Coord Conversion <br />
 -New OneMap Themes API (Get Query Names & Retrieve Theme) <br />
 -POI-Type Themes to GeoJSON conversion <br />
--Find Nearby Amenities for POI-Type Themes (Distance Buffer) -> Please include Turf.js script!
+-Find Nearby Amenities for POI-Type Themes (Based on Distance) -> Please include Turf.js!<br />
+-Sorted Nearby Amenities for POI-Type Themes (Based on Distance) -> Please include Turf.js!
 
 ## OneMap-Leaflet's Utilities
 -Movement Recording (Start, Moving ,and End)<br />
 -KML String to GeoJSON Conversion <br />
 
+
+## Related Scripts
+Turf JS - https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.0.4/turf.min.js <br>
+Google-Mutant - https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js <br>
+Google Javascript API - http://maps.google.com/maps/api/js?v=3.2&sensor=false
 

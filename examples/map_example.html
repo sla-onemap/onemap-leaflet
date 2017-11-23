@@ -54,7 +54,14 @@
 	    			var data = onemap.pointTheme2GeoJSON(themeObj);
 
 	    			//Add GeoJSON to map
-		    		var geojson = L.geoJSON(data, {onEachFeature: function (feature, layer) {layer.bindPopup('<h1>'+feature.properties.NAME+'</h1><p>Description: '+feature.properties.DESCRIPTION+'</p>');}});
+		    		var geojson = L.geoJSON(data, {onEachFeature: function (feature, layer) {layer.bindPopup('<h1>'+feature.properties.NAME+'</h1><p>Description: '+feature.properties.DESCRIPTION+'</p>');
+		    			//Sets Icon information
+						var icon = L.icon({
+									    iconUrl: feature.properties.ICON
+									});
+						layer.setIcon(icon)
+					}});
+		    		
 					
 					geojson.addTo(map);
 

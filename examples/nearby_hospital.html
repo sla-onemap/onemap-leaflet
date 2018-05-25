@@ -18,16 +18,16 @@
 
 					//Setup configuration for REST API Services (Your Access Token)
 					//Our Documentation @  https://docs.onemap.sg
-					onemap.config("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMzNywidXNlcl9pZCI6MzM3LCJlbWFpbCI6ImthaWthaWNvbmdAZ21haWwuY29tIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNTExMjQ2NzQzLCJleHAiOjE1MTE2Nzg3NDMsIm5iZiI6MTUxMTI0Njc0MywianRpIjoiZDg2OWFmZTYzNDRiM2JhYmY2MWEyN2VhMWQwMjg3YjgifQ.LcHgH06vJS46wsRuGVdSldC47y05bECuto3VI1kgGQo");
+					onemap.config("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyMSwidXNlcl9pZCI6MTIxLCJlbWFpbCI6ImRlbW9Ab25lbWFwLnNnIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNTI3MTQyNjI4LCJleHAiOjE1Mjc1NzQ2MjgsIm5iZiI6MTUyNzE0MjYyOCwianRpIjoiY2Q3NDQ5NGFiN2M2OWUxOGFjZjlhN2JiYmE5NTZmZTcifQ.MnwNDacVBzMG2ZjszGovwHb3qt3X1HbXQxwv6XqCE3I");
 
 					//Call Theme Services
-					var themeObj = onemap.retrieveTheme("childcare");
+					var themeObj = onemap.retrieveTheme("moh_hospitals");
 
 	    			//Gets Nearby Theme Features (Points) for overlaying (Theme Object, latitude, longitude and distance[meters])
-	    			var nearby = onemap.nearbyPointFeatures(themeObj,1.3,103.8,200);
+	    			var nearby = onemap.nearbyPointFeatures(themeObj,1.3,103.8,10000);
 
 	    			//Gets Sorted Nearby Features
-	    			var sortedNearby = onemap.sortedNearbyPointFeatures(themeObj,1.297,103.8,1000);
+	    			var sortedNearby = onemap.sortedNearbyPointFeatures(themeObj,1.297,103.8,10000);
 	    			
 	    			//Add GeoJSON to map
 		    		var geojson = L.geoJSON(nearby, {onEachFeature: function (feature, layer) {layer.bindPopup('<h1>'+feature.properties.NAME+'</h1><p>Description: '+feature.properties.DESCRIPTION+'</p>');}});
